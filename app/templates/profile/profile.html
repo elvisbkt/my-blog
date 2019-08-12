@@ -47,7 +47,11 @@
                                 <div class="card-header">
                                     <h4>{{post.title}}</h4>
                                 </div>
-                                
+                                <div class="card-body">
+                                    <p>{{post.description}}</p>
+                                    <p>Posted On:{{post.posted}} By {{post.user.username}}</p>
+                                    <a class="btn btn-outline-info btn-sm text-center" href="/pitch/new/comment/{{post.id}}"> View Comments </a>
+                                </div>
                             </div>
                         </div>
                     </div>
